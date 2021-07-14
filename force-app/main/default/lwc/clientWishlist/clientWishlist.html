@@ -1,0 +1,16 @@
+<template>
+    <template if:true={wish.data}>
+        <lightning-layout multiple-rows>
+            <template for:each={wish.data} for:item="w">
+                <lightning-layout-item key={w.Id} size="6" small-device-size="6" medium-device-size="6"
+                    large-device-size="3" padding="around-small">
+                   
+                    <c-client-prod-image pur={w}></c-client-prod-image>
+                    <div class="productName">{w.Name}</div>
+                </lightning-layout-item>
+
+            </template>
+        </lightning-layout>
+    </template>
+
+</template>

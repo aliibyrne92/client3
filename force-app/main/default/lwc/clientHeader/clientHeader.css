@@ -1,0 +1,11 @@
+.logoBox{
+    margin:auto;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+.outerBox{
+    width:100%;
+    height:60px;
+    padding: 0.5rem 0 0.5rem 0;
+}

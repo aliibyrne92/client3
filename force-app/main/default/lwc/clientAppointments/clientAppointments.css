@@ -1,0 +1,38 @@
+.outerAppointments{
+    padding:1rem;
+}
+
+.customerImgBox{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin: auto;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url('https://alisonbyrn-clienteling-demo.my.salesforce.com/resource/1613489249000/defaultImg');
+}
+
+.appHeader{
+    font-weight: 700;
+    margin: 0.5rem 0 0.7rem 0;
+}
+
+.taskHeader{
+font-weight:700;
+margin-bottom: 0.2rem;
+}
+
+.appointmentRow{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.status{
+    margin-top:0.5rem;
+}
+
+.whoName{
+    text-align: center;
+    margin-top:0.2rem;
+}

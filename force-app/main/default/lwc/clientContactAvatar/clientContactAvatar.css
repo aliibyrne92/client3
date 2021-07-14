@@ -1,0 +1,8 @@
+.customerImgBox{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin: auto;
+    background-size: cover;
+    background-position: 50%;
+}

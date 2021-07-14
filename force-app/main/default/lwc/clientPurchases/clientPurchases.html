@@ -1,0 +1,16 @@
+<template>
+    <template if:true={purch.data}>
+        <lightning-layout multiple-rows>
+            <template for:each={purch.data} for:item="pur">
+                <lightning-layout-item key={pur.Id} size="6" small-device-size="6" medium-device-size="6"
+                    large-device-size="3" padding="around-small">
+                   
+                    <c-client-prod-image pur={pur}></c-client-prod-image>   
+                    <div class="productName">{pur.Product__r.Name}</div>
+                </lightning-layout-item>
+
+            </template>
+        </lightning-layout>
+    </template>
+
+</template>

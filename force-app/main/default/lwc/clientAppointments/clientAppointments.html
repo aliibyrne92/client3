@@ -1,0 +1,35 @@
+<template>
+    <div class="outerAppointments">
+        <div class="slds-text-heading_large appHeader">Appointments</div>
+
+        <template if:true={tasks.data}>
+            <template for:each={tasks.data} for:item="task">
+                <div class="appointmentRow" key={task.Id}>
+                    <lightning-layout multiple-rows>
+                        <lightning-layout-item size="3" small-device-size="3" medium-device-size="3"
+                            large-device-size="3">
+                                <c-client-contact-avatar whoid={task.WhoId}></c-client-contact-avatar>
+                                <div class="slds-text-body_regular whoName">{task.Who.Name}</div>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="5" small-device-size="5" medium-device-size="5"
+                            large-device-size="5">
+                            <div class="slds-text-body_regular taskHeader">{task.Subject}</div>
+                            <div class="slds-text-body_regular">{task.Description}</div>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="4" small-device-size="4" medium-device-size="4"
+                            large-device-size="4">
+                            <div class="slds-text-body_regular">
+                                <lightning-formatted-date-time value={task.ActivityDate} year="2-digit" month="short"
+                                    day="2-digit"></lightning-formatted-date-time>
+                            </div>
+                            <div class="slds-text-body_regular status">{task.Status}</div>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </div> 
+            </template>
+        </template>
+
+
+    </div>
+
+</template>

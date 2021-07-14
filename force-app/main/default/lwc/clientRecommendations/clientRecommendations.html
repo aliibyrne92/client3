@@ -1,0 +1,16 @@
+<template>
+    <template if:true={reco.data}>
+        <lightning-layout multiple-rows>
+            <template for:each={reco.data} for:item="r">
+                <lightning-layout-item key={r.Id} size="6" small-device-size="6" medium-device-size="6"
+                    large-device-size="3" padding="around-small">
+                   
+                   <c-client-reco-image pur={r}></c-client-reco-image>  
+                    <div class="productName">{r.Suggestion__r.Name}</div>
+                </lightning-layout-item>
+
+            </template>
+        </lightning-layout>
+    </template>
+
+</template>
